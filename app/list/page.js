@@ -11,9 +11,12 @@ export default async function List() {
         return (
           <section key={`post_${i}`} className="list-item">
             <Link href={`/detail/${a._id.toString()}`} prefetch={false}>
-              {a.title}
+              <h4>{a.title}</h4>
             </Link>
-            <p>{a.content}</p>
+            <Link href={`/edit/${a._id.toString()}`} prefetch={false}>
+              ✏️
+            </Link>
+            <p>1월 1일</p>
           </section>
         );
       })}
