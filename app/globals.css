@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  text-align: center;
   font-size: 1.25rem;
 }
 
@@ -48,4 +47,23 @@ a {
 
 .logo {
   font-weight: bold;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+input {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
 }
