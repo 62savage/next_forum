@@ -1,18 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Comment({ _id }) {
   const [comment, setComment] = useState('');
+  const [data, setData] = useState([]);
+
+  console.log(data);
+  useEffect(() => {
+    fetch(`/api/comment/list?id=${_id}`)
+      .then((r) => r.json())
+      .then(setData);
+  }, []);
   return (
     <div>
       <hr />
-      <h2>COMMENT LIST</h2>
+      <h2>
+        {data.length > 0
+          ? data.map((a, i) => <div key={i}>{a.content}</div>)
+          : 'NO COMMENT'}
+      </h2>
       <input
         type="text"
         placeholder="COMMENT"
         onChange={(e) => {
-          console.log(comment);
           setComment(e.target.value);
         }}
       />
