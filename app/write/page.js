@@ -1,4 +1,12 @@
-export default function Write() {
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
+import { getServerSession } from 'next-auth';
+
+export default async function Write() {
+  const session = await getServerSession(authOptions);
+
+  if (!session) {
+    return <div>Please LOGIN</div>;
+  }
   return (
     <div>
       <h4 className="p-20">Writing a Post</h4>

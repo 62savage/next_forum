@@ -48,11 +48,11 @@ export const authOptions = {
         token.user = {};
         token.user.name = user.name;
         token.user.email = user.email;
+        token.user.role = user.role;
       }
       return token;
     },
     session: async ({ session, token }) => {
-      console.log('유저조회');
       session.user = token.user;
       return session;
     },

@@ -32,3 +32,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### WARNING
+
+1. input autocomplete issue?
+2. getServerSession으로 JWT를 까봤을때 [...nextauth]에서 callbacks에 추가로 입력해준 내용도 나올지?
+3. 서버에서 session을 불러오는 코드를 if(req.method ...)의 위에 두는게 맞는건지? 차이가 없는건지?
