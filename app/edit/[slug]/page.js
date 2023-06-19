@@ -7,8 +7,6 @@ export default async function Edit(props) {
     .collection('post')
     .findOne({ _id: new ObjectId(props.params.slug) });
 
-  console.log(typeof props.params.slug);
-
   return (
     <form action="/api/post/edit" method="POST">
       <input name="title" defaultValue={result.title} />

@@ -8,7 +8,5 @@ export default async function handler(req, res) {
     .collection('post')
     .updateOne({ _id: new ObjectId(_id) }, { $set: { title, content } });
 
-  console.log('result', result);
-
   return res.redirect(302, '/list');
 }

@@ -25,6 +25,9 @@ export default async function RootLayout({ children }) {
           <Link href={'/write'} prefetch={false}>
             WRITEPGE
           </Link>
+          <Link href={'/register'} prefetch={false}>
+            REGISTERPGE
+          </Link>
           <LoginBtn session={session} />
         </header>
         {children}
