@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 1. input autocomplete issue?
 2. getServerSession으로 JWT를 까봤을때 [...nextauth]에서 callbacks에 추가로 입력해준 내용도 나올지?
-3. 서버에서 session을 불러오는 코드를 if(req.method ...)의 위에 두는게 맞는건지? 차이가 없는건지?
+3. 서버에서 session을 불러오는 코드를 if(req.method ...)의 위에 두는게 맞는건지? 차이가 없는건지??
